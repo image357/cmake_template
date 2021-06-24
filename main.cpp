@@ -3,8 +3,10 @@
 //
 
 #include <iostream>
+#include <sub1/ClassA.h>
 
 int main()
 {
+    ClassA a;
     std::cout << "Hello World!" << std::endl;
 }
