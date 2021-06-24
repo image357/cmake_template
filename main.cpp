@@ -4,9 +4,11 @@
 
 #include <iostream>
 #include <sub1/ClassA.h>
+#include <sub2/ClassB.h>
 
 int main()
 {
     ClassA a;
+    ClassB b;
     std::cout << "Hello World!" << std::endl;
 }
