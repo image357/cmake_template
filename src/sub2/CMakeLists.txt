@@ -11,5 +11,6 @@ add_library(
 
 target_include_directories(
         sub2 INTERFACE
-        ${CMAKE_SOURCE_DIR}/src
+        $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/src>
+        $<INSTALL_INTERFACE:include>
 )

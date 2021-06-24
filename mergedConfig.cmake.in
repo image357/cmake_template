@@ -1,0 +1,4 @@
+@PACKAGE_INIT@
+
+include("@CMAKE_INSTALL_PREFIX@/lib/cmake/@CMAKE_PROJECT_NAME@/mergedTargets.cmake")
+check_required_components("@CMAKE_PROJECT_NAME@")
