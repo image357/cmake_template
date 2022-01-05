@@ -1,5 +1,3 @@
-project(docs)
-
 find_package(
         Doxygen
         REQUIRED dot
