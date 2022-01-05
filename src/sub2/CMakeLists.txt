@@ -1,7 +1,15 @@
-project(sub2)
+project(sub2 VERSION 7.8.9)
 
-FILE(GLOB_RECURSE SOURCES *.cpp)
-FILE(GLOB_RECURSE HEADERS *.h)
+set(
+        SOURCES
+        ClassB.cpp
+)
+
+set(
+        HEADERS
+        ${CMAKE_SOURCE_DIR}/include/sub2/ClassB.h
+        internal.h
+)
 
 add_library(
         sub2 STATIC
@@ -9,8 +17,13 @@ add_library(
         ${HEADERS}
 )
 
+
+include(GNUInstallDirs)
 target_include_directories(
-        sub2 INTERFACE
-        $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/src>
-        $<INSTALL_INTERFACE:include>
+        sub2
+        PUBLIC
+        $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/include>
+        $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
+        INTERFACE
+        $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/src> # for tests
 )

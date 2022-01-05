@@ -2,10 +2,16 @@
 // Created by koepke on 24.06.2021.
 //
 
-#include "ClassB.h"
+#include "sub2/ClassB.h"
+
 #include <iostream>
+#include "internal.h"
+
+namespace sub2 {
 
 ClassB::ClassB()
 {
-    std::cout << "Construct ClassB" << std::endl;
+    std::cout << ::sub2::message << std::endl;
+}
+
 }
