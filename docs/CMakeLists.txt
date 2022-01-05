@@ -7,7 +7,6 @@ find_package(
 )
 
 set(DOXYGEN_EXTRACT_ALL YES)
-set(DOXYGEN_HAVE_DOT YES)
 set(DOXYGEN_UML_LOOK YES)
 
 doxygen_add_docs(
