@@ -18,6 +18,7 @@ find_package(Threads REQUIRED)
 # add submodules
 add_subdirectory(src/sub1)
 add_subdirectory(src/sub2)
+add_subdirectory(docs)
 add_subdirectory(tests EXCLUDE_FROM_ALL)
 
 include(merged.cmake)
