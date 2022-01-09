@@ -7,7 +7,7 @@ set(
 
 set(
         HEADERS
-        ${CMAKE_SOURCE_DIR}/include/cmake_tutorial/sub2/ClassB.h
+        ../../include/cmake_tutorial/sub2/ClassB.h
         internal.h
 )
 
