@@ -2,8 +2,8 @@
 // Created by koepke on 24.06.2021.
 //
 
-#ifndef CMAKE_TUTORIAL_CLASSB_H
-#define CMAKE_TUTORIAL_CLASSB_H
+#ifndef CMAKE_TEMPLATE_CLASSB_H
+#define CMAKE_TEMPLATE_CLASSB_H
 
 namespace sub2 {
 
@@ -14,4 +14,4 @@ public:
 
 }
 
-#endif //CMAKE_TUTORIAL_CLASSB_H
+#endif //CMAKE_TEMPLATE_CLASSB_H

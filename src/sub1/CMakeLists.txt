@@ -7,7 +7,7 @@ set(
 
 set(
         HEADERS
-        ../../include/cmake_tutorial/sub1/ClassA.h
+        ../../include/cmake_template/sub1/ClassA.h
         internal.h
 )
 

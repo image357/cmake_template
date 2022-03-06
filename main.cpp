@@ -3,8 +3,8 @@
 //
 
 #include <thread>
-#include <cmake_tutorial/sub1/ClassA.h>
-#include <cmake_tutorial/sub2/ClassB.h>
+#include <cmake_template/sub1/ClassA.h>
+#include <cmake_template/sub2/ClassB.h>
 
 void a_func()
 {

@@ -2,7 +2,7 @@
 // Created by koepke on 24.06.2021.
 //
 
-#include <cmake_tutorial/sub2/ClassB.h>
+#include <cmake_template/sub2/ClassB.h>
 
 #include <iostream>
 #include "internal.h"

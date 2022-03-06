@@ -1,1 +1,1 @@
-# cmake_tutorial
+# cmake_template

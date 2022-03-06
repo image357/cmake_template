@@ -2,8 +2,8 @@
 // Created by koepke on 1/5/22.
 //
 
-#ifndef CMAKE_TUTORIAL_GLOBALTEST_H
-#define CMAKE_TUTORIAL_GLOBALTEST_H
+#ifndef CMAKE_TEMPLATE_GLOBALTEST_H
+#define CMAKE_TEMPLATE_GLOBALTEST_H
 
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
@@ -14,4 +14,4 @@ protected:
     void TearDown() override;
 };
 
-#endif //CMAKE_TUTORIAL_GLOBALTEST_H
+#endif //CMAKE_TEMPLATE_GLOBALTEST_H

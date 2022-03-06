@@ -2,8 +2,8 @@
 // Created by koepke on 1/5/22.
 //
 
-#ifndef CMAKE_TUTORIAL_INTERNALA_H
-#define CMAKE_TUTORIAL_INTERNALA_H
+#ifndef CMAKE_TEMPLATE_INTERNALA_H
+#define CMAKE_TEMPLATE_INTERNALA_H
 
 #include  <string>
 
@@ -13,4 +13,4 @@ const std::string message = "This is ClassA!";
 
 }
 
-#endif //CMAKE_TUTORIAL_INTERNALA_H
+#endif //CMAKE_TEMPLATE_INTERNALA_H

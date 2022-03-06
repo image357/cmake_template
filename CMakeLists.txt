@@ -9,7 +9,7 @@ HunterGate(
 )
 
 # start project
-project(cmake_tutorial VERSION 1.2.3)
+project(cmake_template VERSION 1.2.3)
 set(CMAKE_CXX_STANDARD 17)
 
 # find dependencies
