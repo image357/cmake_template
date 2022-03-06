@@ -38,8 +38,8 @@ install(
 )
 
 install(
-        DIRECTORY include/${PROJECT_NAME}/
-        DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/${PROJECT_NAME}
+        DIRECTORY include/
+        DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/${PROJECT_NAME}-${PROJECT_VERSION}
         COMPONENT Development
         FILES_MATCHING PATTERN "*.h"
 )
