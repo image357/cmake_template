@@ -1,18 +1,17 @@
 cmake_minimum_required(VERSION 3.20)
-
-# initialize Hunter
-include(lib/HunterGate/cmake/HunterGate.cmake)
-HunterGate(
-        URL "https://github.com/cpp-pm/hunter/archive/v0.23.320.tar.gz"
-        SHA1 "9b4e732afd22f40482c11ad6342f7d336634226f"
-        LOCAL
-)
+include(cmake/utils/get_cmake_args.cmake)
 
 # start project
 project(cmake_template VERSION 1.2.3)
 set(CMAKE_CXX_STANDARD 17)
 
 # find dependencies
+include(cmake/utils/add_external_package.cmake)
+add_external_package(GTest CMAKE_ARGS ${CMAKE_ARGS})
+add_external_package(spdlog CMAKE_ARGS ${CMAKE_ARGS})
+
+find_package(GTest REQUIRED)
+find_package(spdlog REQUIRED)
 find_package(Threads REQUIRED)
 
 # add submodules
@@ -35,4 +34,4 @@ target_link_libraries(
 
 # install routines
 set(INSTALL_TARGETS main merged sub1 sub2)
-include(cmake/install.cmake)
+include(cmake/utils/install_targets.cmake)

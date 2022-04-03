@@ -1,8 +1,5 @@
 project(tests)
 
-hunter_add_package(googletest_local)
-find_package(GTest CONFIG REQUIRED)
-
 add_executable(
         tests
         GlobalTest.cpp GlobalTest.h
