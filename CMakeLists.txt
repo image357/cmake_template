@@ -7,11 +7,11 @@ set(CMAKE_CXX_STANDARD 17)
 
 # find dependencies
 include(cmake/utils/add_external_package.cmake)
-add_external_package(GTest CMAKE_ARGS ${CMAKE_ARGS})
-add_external_package(spdlog CMAKE_ARGS ${CMAKE_ARGS})
+add_external_package(GTest VERSION 1 CMAKE_ARGS ${CMAKE_ARGS})
+add_external_package(spdlog VERSION 1 CMAKE_ARGS ${CMAKE_ARGS})
 
-find_package(GTest REQUIRED)
-find_package(spdlog REQUIRED)
+find_package(GTest 1 REQUIRED)
+find_package(spdlog 1 REQUIRED)
 find_package(Threads REQUIRED)
 
 # add submodules
